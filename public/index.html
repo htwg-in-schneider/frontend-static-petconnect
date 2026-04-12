@@ -1,83 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetConnect</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="PetConnect.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400&display=swap" rel="stylesheet"> 
-
 </head>
+
 <body>
-    <header>
-        <div class= "header-top">
-            <div class="left"> 
-            <img src="ImagesPetConnect/logo.jpg" width="120" height="100" alt="PetConnect Logo">
-    <h3>PetConnect</h3>
-    </div>
-    <div class="right">
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-    <button class="btn my-btn" type="button">Ausschreibungen</button>
-    <button class="btn my-btn" type="button">Über uns</button>
-     <button class="btn my-btn" type="button">Anmelden</button>
-      <button class="btn my-btn" type="button">Registrieren</button>
-      </div>
-    </div>
-    </div>
 
-    <div class="header-bottom">
-        <div class="linkeSeite">
-    <h1> Willkommen bei PetConnect!</h1>
-    <p>Du suchst einen zuverlässigen Tiersitter für dein Haustier? Wir helfen dir, die perfekte Betreuung zu finden - schnell und unkompliziert.</p>
-    
-    <button class="btn my-btn2" type="button">Jetzt registrieren</button>
-    </div>
-    <div class="image1">
-          <img src="ImagesPetConnect/goldenretriever.jpg"width="380" height="300" alt="goldenretriever" >
-          </div>
-          <div class="image2left">
-        <img src="ImagesPetConnect/hundundkatze.jpg" width="170" height="100" alt="Hund und Katze">
+<header class="header-top py-2">        <!--padding oben + unten (p = padding, y = vertical -->
+    <div class="container d-flex justify-content-between align-items-center">
+     <!--   container	            begrenzt Breite (zentriert Inhalt)
+            d-flex	                macht Flexbox
+            justify-content-between	verteilt links/rechts
+            align-items-center	    vertikal zentriert -->
+        <div class="d-flex align-items-center gap-2">       <!-- gap-2  Abstand zwischen Logo & Text-->
+            <img src="ImagesPetConnect/logo.jpg" width="60">
+            <h5 class="m-0">PetConnect</h5>     <!--m-0 :entfernt Margin (Abstand)-->
         </div>
-        <div class="image3right">
-      <img src="ImagesPetConnect/hund-header.jpg" width="120" height="70" alt="Hund">
+
+        <div> <!--btn: Bootstrap Button Basis-->
+            <button class="btn btn1">Ausschreibungen</button>
+            <button class="btn btn1">Über uns</button>
+            <button class="btn my-btn-anmelden">Anmelden</button>
+            <button class="btn my-btn-registrieren">Registrieren</button>
+        </div>
+
+    </div>
+</header>
+
+
+<section class="top py-5"> <!--py-5 = Bootstrap (viel Abstand oben/unten)-->
+  <div class="container">
+    <div class="row align-items-center"> <!--row → Zeile align-items-center → vertikal mittig-->
+
+      <!-- TEXT -->
+      <div class="col-lg-6 text-center text-lg-start"> 
+        <!--col-lg-6        auf Desktop: 50% Breite auf Mobile: 100%
+        text-center         Mobile
+        text-lg-start       Desktop links-->
+        <h1>Willkommen bei PetConnect!</h1>
+        <p>
+          Du suchst einen zuverlässigen Tiersitter für dein Haustier?
+          Wir helfen dir, die perfekte Betreuung zu finden –
+          schnell und unkompliziert.
+        </p>
+        <button class="btn btn2">Jetzt registrieren</button>
       </div>
-     
+
+      
+      <div class="col-lg-6 position-relative text-center mt-4 mt-lg-0">
+
+        <div class="image-main">
+          <img src="ImagesPetConnect/goldenretriever.jpg" class="img-fluid"> <!--passt sich Bildschirm an wird nicht zu groß-->
+        </div>
+
+        <div class="image-small-left">
+          <img src="ImagesPetConnect/hundundkatze.jpg">
+        </div>
+
+        <div class="image-small-right">
+          <img src="ImagesPetConnect/hund-header.jpg">
+        </div>
+
+      </div>
+
     </div>
+  </div>
+</section>
+
+
+<section class="funktion py-5 text-center">
+  <div class="container">
+
+    <h2>So funktioniert’s</h2>
+    <img src="ImagesPetConnect/Colorful_paws.png" class="mb-3" width="120">
+
+    <div class="row mt-4">
+
+      <div class="col-md-4"> <!-- 4 von 12 Spalten-->
+        <img src="ImagesPetConnect/User_Icon_Green.png" class="icon mb-2">
+        <h5><span class="number">1</span> Registrieren</h5>
+        <p>Erstelle ein Profil als Tierbesitzer oder Tiersitter - kostenlos und einfach.</p>
+      </div>
+
+      <div class="col-md-4">
+        <img src="ImagesPetConnect/Lupe_Icon_Rosa.png" class="icon mb-2">
+        <h5><span class="number">2</span> Finden</h5>
+        <p>Durchsuche passende Anzeigen in deiner Umgebung.</p>
+      </div>
+
+      <div class="col-md-4">
+        <img src="ImagesPetConnect/Speechbubble_Icon_green.png" class="icon mb-2">
+        <h5><span class="number">3</span> Verbinden</h5>
+        <p>Nehmt Kontakt auf und besprecht privat alle Details.</p>
+      </div>
+
     </div>
-    </header>
+  </div>
+</section>
 
 
-    <h2>So funktioniert's</h2> 
-    <h3>Registrieren</h3>
-    <p>Erstelle ein Profil als Tierbesitzer oder Tiersitter - kostenlos und einfach.</p>
-    <h3>Finden</h3>
-    <p>Durchsuche passende Anzeigen in deiner Umgebung.</p>
-    <h3>Verbinden</h3>
-    <p>Nehmt Kontakt auf und besprecht privat alle Details.</p>
+<section class="warum py-5 text-center">
+  <div class="container">
+
+    <h2>Warum PetConnect?</h2>
+    <img src="ImagesPetConnect/Colorful_paws.png" class="mb-4" width="120">
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card-box">
+          <img src="ImagesPetConnect/Green_location_pin_icon.png" class="icon mb-2">
+          <h6>In deiner Umgebung</h6>
+          <p>Finde Tiersitter ganz in deiner Nähe</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-box">
+          <img src="ImagesPetConnect/calendar_icon.png" class="icon mb-2">
+          <h6>Schnell & unkompliziert</h6>
+          <p>Einfach und benutzerfreundlich</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-box">
+          <img src="ImagesPetConnect/User_Icon_Green.png" class="icon mb-2">
+          <h6>Direkter Austausch</h6>
+          <p>Chatte mit potenziellen Tiersittern</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
-    <h2> Warum PetConnect?</h2>
-    <p>In deiner Umgebung Finde Tiersitter ganz in deiner Nähe</p>
-    <p>Schnell&Unkompliziert Einfach und benutzerfreundlich</p>
-    <p>Direkter Austausch Chatte mit potenziellen Tiersittern</p>
+<section class="bewertungen py-5 text-center">
+  <div class="container">
 
-    <h2>Überzeug dich selbst: Das sagen unsere Nutzer über uns...</h2>
-    <img src="ImagesPetConnect/knochen.png" width="100" height="80" alt="knochen">
-    <p> "Ich bin froh auf diese Website gestoßen zu sein! Endlich habe ich jemanden gefunden der meinen Wolfi ausführt." ~ Manuela,73 aus Bremen</p>
-    <p>"Durch PetConnect habe ich eine neue Freundin gefunden. Ein Wochenende nehme ich ihre Hündin Paula zu mir, ein anderes Wochenende nimmt sie meine Hündin Mia zu sich - und ab und zu ist noch Zeit für ein Kaffee!" ~ Rebecca, 26 aus Berlin</p>
-    <p>"Ich liebe PetConnect!!!" ~Lucas, 9 aus München</p>
-    <img src="ImagesPetConnect/jungemithund.jpg" width="100" height="80" alt="jungemithund">
+    <h2>Überzeug dich selbst</h2>
 
-    <footer>
-        <div class="footerlogo">
-         <img src="ImagesPetConnect/logo.jpg" width="120" height="100" alt="PetConnect Logo">
-           <h3>PetConnect</h3>
-           </div>
-           <div class="Menüunten">
-           <p1> Impressum|Datenschutz HTWG Konstanz | Alfred-Wachtel-Straße 8 | 78467 Konstanz</p1>
-           </div>
-    </footer>
+    <div class="review">
+      <p>"Ich bin froh auf diese Website gestoßen zu sein! Endlich habe ich jemanden gefunden der meinen Wolfi ausführt."</p>
+      <small>~ Manuela, 73 aus Bremen</small>
+    </div>
+
+    <div class="review">
+      <p>"Durch PetConnect habe ich eine neue Freundin gefunden..."</p>
+      <small>~ Rebecca, 26 aus Berlin</small>
+    </div>
+
+    <div class="review">
+      <p>"Ich liebe PetConnect!!!"</p>
+      <small>~ Lucas, 9 aus München</small>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="footer py-4 text-center">
+    <img src="ImagesPetConnect/logo.jpg" width="60">
+    <p>Impressum | Datenschutz | HTWG Konstanz</p>
+</footer>
 
 </body>
 </html>
