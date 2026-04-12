@@ -1,0 +1,154 @@
+/* BODY ALLGEMEIN */
+body{
+    font-family: 'Inria Sans', sans-serif;
+}
+
+/* TOP HEADER */ 
+
+    .header-top{
+       display:flex;
+       gap: 15px;
+       justify-content: space-between;
+       align-items:center;
+       background-color: #E8CFCF;
+       padding: 10px 15px;
+    }
+
+       .left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+       }
+
+       .right{
+         display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+
+       }
+       
+    button.btn.my-btn{       /* funktioniert nicht, bekommt keine umrandung */
+        background-color:white;
+        color:black;
+        border: 3px #D0A6A6;
+    }
+   
+    /*BOTTOM HEADER*/
+
+    .header-bottom{
+        background-color: #F6EFEA;
+        position: relative;
+        min-height: 430px;
+    
+    }
+
+    .linkeSeite{
+        max-width: 50%;
+    
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;  /*abstand zum element unten dran*/
+        text-align:right;
+        
+        
+    }
+
+    p {
+         font-size: 1.6rem;
+         margin-bottom: 20px;
+         margin-top: 60px;
+         text-align: center;  /*horizontale ausrichtung innerhalb des Textbereichs*/
+         margin-left:60px;
+
+    }
+
+
+    button.btn.my-btn2{
+        padding: 10px 20px;
+        background-color:#9BAF96; 
+        border: none;
+        cursor: pointer;
+        margin-top: 80px;  /*nach unten verschieben*/
+        margin-left: 250px;  /*nach rechts verschieben*/
+
+    }
+
+
+    .image1 img{
+        border-radius:15px ;    /*ecken abrunden vom bild*/
+    }
+
+    .image1{
+        
+        position:absolute;  /*orientiert sich von der postion her am header
+        z-index: 3;              /*tiefe des bildes-> ganz unten von allen drei*/
+        border: 20px solid #FAFBCD;
+        border-radius: 15px;  /*ecken abrunden*/
+        top: 55px;   /*wie weit entfernt vom kopf der seite*/
+        right: 90px;    /*wie weit entfernt von rechtem rand*/
+        
+}
+
+    .image2left img{
+        border-radius: 10px;
+    }
+
+    .image2left{
+         position:absolute;
+        z-index: 3;              
+        border: 9px solid #D0A6A6;
+        border-radius: 20px; 
+        top: 300px;   
+        right: 400px;  
+    }
+     .image3right img{
+        border-radius: 10px;
+     }
+
+     .image3right{
+          position:absolute;
+        z-index: 3;              
+        border: 9px solid #D0A6A6;
+        border-radius: 20px; 
+        top: 300px;   
+        right: 15px;  
+
+     }
+
+     /*FOOTER*/
+
+     footer{
+        background-color: #E8CFCF;
+         min-height: 140px;
+
+     }
+    
+     .footerlogo{
+        position: absolute;
+      margin-top: 30px;
+         display: flex;
+        align-items: center;
+       
+     }
+
+     p1{
+       font-size: larger;
+     }
+
+     .Menüunten{     /*hab das p1 nicht nach unten verschoben bekommen*/
+        margin-left: 400px;  
+        
+     }
+
+
+     /*MITTELPART*/
+     /* die ganzen p muss man wahrscheinlich p2,p3 usw nennen sonst ändern sich alle mit wenn man eines ändert (glaub ich)*/
+     /*header teil sollte so passen, sieht aus wie im hifi --> außer das willkommen bei petcoonnect -> muss vllt weiter runter*/
+
+    
+
+
