@@ -30,6 +30,9 @@ body {
 
 .top {
     background-color: #F6EFEA;
+     min-height: 90vh;
+     align-items: center;
+     display: flex;
 }
 
 h1 {
