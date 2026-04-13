@@ -144,13 +144,41 @@ h1 {
 }
 
 .review {
+    font-size:x-large;
     background: #9BAF96;
     padding: 25px;
     border-radius: 30px;
     margin: 20px auto;
-    max-width: 500px;
+    max-width: 1000px;
     border: 4px solid #5F7E57;
 }
+
+.knochenbild {
+    width: 20px;
+    position:absolute;
+    right:0;
+    left: 1040px;;
+    height: auto; 
+    margin-top: -55px;
+    display: flex; 
+    justify-content: center;
+    
+}
+
+/* MOBILE kleiner als 992px */
+@media (max-width: 991px) { /* Auf mobilen Geräten */
+.knochenbild {
+        margin-top: 10px;
+        margin-bottom: 10px; /* Etwas Abstand unter dem Bild */
+        display: block;
+        width: 60px; /* Optional: Bildgröße anpassen */
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        display: inline-block;
+    }
+}
+
 
 /* FOOTER */
 .footer {
