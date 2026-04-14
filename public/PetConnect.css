@@ -36,7 +36,15 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+}
+
+h6{
+    font-weight: bold;
+}
+
+h5{
+    font-weight: bold;
 }
 
 .top p {
@@ -117,7 +125,7 @@ h1 {
 }
 
 .icon {
-    width: 60px;
+    width: 100px;
 }
 
 .number {
