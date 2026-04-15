@@ -3,60 +3,72 @@ body {
     font-family: 'Inria Sans', sans-serif;
 }
 
-/* TOP HEADER */
-
+/*TOP HEADER
 .header-top {
-    background-color: #E8CFCF;
-}
-
-.btn1 {
-    border: 2px solid #D0A6A6;
-    background-color: white;
-    margin-right: 5px;
-}
-
-.my-btn-anmelden {
-    border: none;
-    background-color: #D0A6A6;
-    margin-right: 5px;
-}
-
-.my-btn-registrieren {
-    border: none;
-    background-color: #9BAF96;
-    margin-right: 5px;
-}
-
+    background-color: #E8CFCF;   ist unter navbar also kann weg
+} */
 
 .top {
     background-color: #F6EFEA;
-     min-height: 90vh;
-     align-items: center;
-     display: flex;
 }
 
-h1 {
-    font-size: 3.5rem;
+
+/* NAVBAR STYLE */
+.navbar {
+    background-color: #E8CFCF; 
+    padding-top: 10px; /* Etwas Abstand nach oben */
+    padding-bottom: 10px; /* Etwas Abstand nach unten */
+   
 }
 
-h6{
-    font-weight: bold;
+/* Burger-Menü Button */
+.navbar-toggler {
+    border-color: white; 
+    background-color: #9BAF96;
 }
 
-h5{
-    font-weight: bold;
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #D28C8C; /* Setze die Textfarbe der Links */
+    font-weight: bold; /* Mach den Text fett */
 }
 
-.top p {
-    font-size: 1.2rem;
+/* Hover-Effekt für Navbar Links */
+.navbar-nav .nav-link:hover {
+    color: #5F7E57; /* Setze die Farbe beim Hover */
+    border-radius: 20px;
+    background-color: #FAFBCD
+
+}
+.nav-item {
+    background-color: #F6EFEA;
+    border-radius: 20px;
+
 }
 
-/* BUTTON */
+
+/* Offcanvas Styling */
+.offcanvas-body .navbar-nav .nav-link {
+    font-size: 1.2rem; /* Schriftgröße für Links im Offcanvas */
+    padding: 10px 20px; /* Abstand um die Links */
+    color: #D28C8C; /* Textfarbe */
+    background-color: #E8CFCF;
+   /* margin-left: 100px;  /*navigations buttons sind auseinander*/
+    border-radius: 20px;
+   
+}
+
+.offcanvas-header {
+    background-color: #E8CFCF;
+} 
+
+
+/* BUTTON */ 
 .btn2 {
     background-color: #9BAF96;
     border: none;
     padding: 10px 20px;
-}
+}                                   
 
 /* BILDER */
 .image-main { /*Rahmen um Hauptbild*/
@@ -117,6 +129,7 @@ h5{
     .image-small-right img {
         width: 120px;
     }
+
 }
 
 /* FUNKTION */
@@ -180,7 +193,7 @@ h5{
 @media (max-width: 991px) { /* Auf mobilen Geräten */
 .knochenbild {
         margin-top: 10px;
-        margin-bottom: 10px; /* Etwas Abstand unter dem Bild */
+        margin-bottom: 10px;  /*Etwas Abstand unter dem Bild */
         display: block;
         width: 60px; /* Optional: Bildgröße anpassen */
         margin-left: auto;
@@ -188,7 +201,7 @@ h5{
         position: static;
         display: inline-block;
     }
-}
+} 
 
 
 /* FOOTER */
