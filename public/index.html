@@ -13,59 +13,43 @@
 <body>
 
 <!-- NAVBAR START -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <img src="ImagesPetConnect/logo.jpg" width="60" alt="PetConnectLogo"> 
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <img src="ImagesPetConnect/logo.jpg" width="60" class="me-2" alt="PetConnectLogo"> 
         <a class="navbar-brand" href="#">PetConnect</a>
        
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg">
             <div class="offcanvas-header">
-                <h5 id="navbarOffcanvasLgLabel">Navigation</h5>
+                <h5 id="navbarOffcanvasLgLabel">PetConnect</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
 
-
-            <ul class="navbar-nav ms-auto"> <!-- ms-auto hier fügt die "Right-Aligment" hinzu -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ausschreibungen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Über uns</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Anmelden</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Registrieren</a>
-                </li>
-            </ul>
+            <!-- ✅ FIX: UL ist jetzt IM offcanvas-body -->
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto"> <!-- ms-auto hier fügt die "Right-Aligment" hinzu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ausschreibungen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Über uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anmelden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrieren</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
           
     <!-- NAVBAR END -->
-    
-
-  <div class="top" >
-<header class="header-top py-2">        <!--padding oben + unten (p = padding, y = vertical -->
-    <div class="container d-flex justify-content-between align-items-center">
-     <!--   container	            begrenzt Breite (zentriert Inhalt)
-            d-flex	                macht Flexbox
-            justify-content-between	verteilt links/rechts
-            align-items-center	    vertikal zentriert -->
-        <div class="d-flex align-items-center gap-2">       <!-- gap-2  Abstand zwischen Logo & Text-->
-            <img src="ImagesPetConnect/logo.jpg" width="60" alt="PetConnectLogo">
-            <h5 class="m-0">PetConnect</h5>     <!--m-0 :entfernt Margin (Abstand)-->
-        </div>
-
-        </div> 
-        </div>
-
-    </div>
-</header>
 
 
 <section class="top py-5"> <!--py-5 = Bootstrap (viel Abstand oben/unten)-->
@@ -151,7 +135,7 @@
         <div class="card-box">
           <img src="ImagesPetConnect/Green_location_pin_icon.png" class="icon mb-2" alt="LocationIcon">
           <h6>In deiner Umgebung</h6>
-          <p>Filtere nach Standort und finde Tiersitter ganz in deiner Nähe</p>
+          <p>Filtere nach Standort und finde Tierbesitzer ganz in deiner Nähe</p>
         </div>
       </div>
 
@@ -179,10 +163,10 @@
 <section class="bewertungen py-5 text-center">
   <div class="container">
 
-    <h2>Überzeug dich selbst: Das sagen unsere Nutzer über uns...</h2>
-    <div class="knochenbild">
-    <img src="ImagesPetConnect/knochen.png" alt="Hundeknochen" width="60" alt="Hundeknochen">
-    </div>
+    <div class="bewertung-header">
+  <h2>Überzeug dich selbst: Das sagen unsere Nutzer über uns...</h2>
+  <img src="ImagesPetConnect/knochen.png" class="knochenbild" alt="Hundeknochen">
+</div>
 
     <div class="review">
       <p>"Ich bin froh auf diese Website gestoßen zu sein! Endlich habe ich jemanden gefunden der meinen Wolfi ausführt."</p>
